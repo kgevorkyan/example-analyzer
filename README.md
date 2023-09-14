@@ -1,6 +1,7 @@
 # example analyzer tool
 
 This is an example project to help you create your own analyzer.
+You can read the [PARTICIPANTS_GUIDE.md](./PARTICIPANTS_GUIDE.md) to know what modifications are available.
 
 ## Build
 
