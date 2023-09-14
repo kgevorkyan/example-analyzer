@@ -8,7 +8,7 @@ Participants are free to modify the project files except the following ones (oth
     * Output should be in SARIF format named ```report.sarif```
         * It must be generated in the same directory where ```run.sh``` is called
         * An example of result file format  (```report.sarif```)
-          can be found in [the link](https://github.com/GSACTech/resources/blob/main/contest/report.sarif)
+          can be found [here](https://github.com/GSACTech/resources/blob/main/contest)
 * [```Dockerfile```](/example-analyzer/Dockerfile)
     * Create a docker image where the analyzer is copied into ```/root``` directory
     * Install all required packages and build the analyzer
