@@ -24,7 +24,7 @@ function check_build() {
 }
 
 function run_pass() {
-  opt-12 -load-pass-plugin "$PASS_PATH" -passes=simple -disable-output "$GIVEN_BC"
+  opt-14 -load-pass-plugin "$PASS_PATH" -passes=simple -disable-output "$GIVEN_BC"
   FILE=$(basename "$GIVEN_BC")
   FILE_NAME=${FILE%.*}
   if [ ! -f "report.sarif" ]; then
