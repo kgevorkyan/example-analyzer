@@ -2,10 +2,10 @@ set(AnalyzerSources SimplePass.cpp Sarif.cpp)
 
 add_library(Analyzer SHARED ${AnalyzerSources})
 
-find_package(LLVM 14 REQUIRED)
+find_package(LLVM 12 REQUIRED)
 
-if (NOT "14" VERSION_EQUAL "${LLVM_VERSION_MAJOR}")
-    message(FATAL_ERROR "Found LLVM ${LLVM_VERSION}, but need 14")
+if (NOT "12" VERSION_EQUAL "${LLVM_VERSION_MAJOR}")
+    message(FATAL_ERROR "Found LLVM ${LLVM_VERSION}, but need 12")
 endif ()
 
 target_include_directories(Analyzer PRIVATE "${CMAKE_SOURCE_DIR}/include")
